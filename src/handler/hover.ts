@@ -110,7 +110,8 @@ export default class HoverHandler {
         modes: ['n'],
         maxWidth: this.config.floatMaxWidth,
         maxHeight: this.config.floatMaxHeight,
-        autoHide: this.config.autoHide
+        autoHide: this.config.autoHide,
+        border: 'rounded'
       }
       opts.excludeImages = workspace.getConfiguration('coc.preferences').get<boolean>('excludeImageLinksInMarkdownDocument', true)
       await this.hoverFactory.show(docs, opts)
