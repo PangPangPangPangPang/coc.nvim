@@ -745,6 +745,7 @@ function! s:convert_config_nvim(config) abort
     let result['width'] = float2nr(result['width'] + 1)
   endif
   let result['height'] = float2nr(result['height'])
+  let result['border'] = 'rounded'
   return result
 endfunction
 
